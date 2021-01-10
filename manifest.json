@@ -1,0 +1,43 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/db.js", "js/dbService.js", "js/spacesService.js", "js/utils.js", "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/icon128.png",
+      "default_popup": "popup.html",
+      "default_title": "Spaces"
+   },
+   "commands": {
+      "spaces-move": {
+         "description": "Move active tab",
+         "suggested_key": {
+            "default": "Ctrl+Shift+M",
+            "mac": "Command+Shift+M"
+         }
+      },
+      "spaces-switch": {
+         "description": "Switch between spaces",
+         "suggested_key": {
+            "default": "Ctrl+Shift+S",
+            "mac": "Command+Shift+S"
+         }
+      }
+   },
+   "description": "Intuitive tab management",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgGyO9/B0KSFZXaGS1/kQiRk5PfhcNR/Q56AtkropQuY9nef+3/8iCfbLXtTs8Cot6PJ2DBWuQJVOZdlTc/r/Hgqqwagzo9vw1NjB0UNWTeTL4sQLV7lPMSEOFt9ghPuW+zYOlu6GsMsJnFqWlqkRk9ba4LsX1XyGqmJm6IDDE02Mx2eXE9jwnEYw/zdD5+gp6ouy/1rM8ImciDXflx1U8Z7+9YrQR1YHro67UYIbtvIJD7WIVbjhpaMOL2kZdRlYyxNCXnyUaQiAzapQGaE70+sRtXfclBrtRsb9q++2xOCLAy8EHgdhDEhIHfuL4VOJYhv1ooG3fCnRBTnRK84JDQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "35",
+   "name": "Spaces",
+   "options_page": "spaces.html",
+   "permissions": [ "tabs", "storage", "history", "unlimitedStorage", "chrome://favicon/*", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.3",
+   "web_accessible_resources": [  ]
+}
