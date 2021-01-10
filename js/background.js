@@ -534,8 +534,8 @@ var spaces = (() => {
                         focused: true,
                         height: 450,
                         width: 310,
-                        top: screen.height - 450,
-                        left: screen.width - 310,
+                        left: screen.width / 2 - 310,
+                        top: -(screen.height / 2 + 225), // 外接显示器位于主屏幕上方，需要用负像素
                     },
                     window => {
                         spacesPopupWindowId = window.id;
